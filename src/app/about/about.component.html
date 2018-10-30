@@ -1,0 +1,9 @@
+<div class="screen"><br>
+  <input class="form-control mr-sm-2 placeholderAlign" type="text" [(ngModel)]="searchText" placeholder="Type name or contact number"><br>
+  <div class="pipeFunction">
+    <div *ngFor="let c of characters | filter : searchText">
+      {{c}}
+    </div>
+  </div>
+  </div>
+  <footer class="footer">COPYRIGHT © 2018 ABC PVT. LTD.</footer>
